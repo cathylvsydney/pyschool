@@ -1,0 +1,13 @@
+#Generating Numbers
+#'''Create a function generateNumbers(num) that takes in a positive number as argument and returns a list of number from 0 to that number inclusive.
+Note: The function range(5) will return a list of number [0, 1, 2, 3, 4].'''
+
+def generateNumber(num):
+	m = []
+	new = num + 1
+	while new > 0:
+		x = new - 1 #you cannot change x=new-1 into num, coz when you give num a value, it is a fixed value and cannot change in the loop
+		m.append(x)
+		new = new - 1
+	m.reverse()
+	return m
