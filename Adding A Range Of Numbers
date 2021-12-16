@@ -1,0 +1,6 @@
+#Create a function addNumbers(num) that takes in a positive number as argument and returns the sum of all the number between 0 and that number (inclusive).
+def addNumbers(num):
+    total=0
+    for i in range(0,num+1):
+        total=total+i
+    return total
