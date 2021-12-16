@@ -1,0 +1,9 @@
+def AgenerateNumber(x, y, z):
+    li = []
+    if z > 0:
+        for i in range(x, y + z, z):
+            li.append(i)
+    else:
+        for e in range(x, y - 1, z):
+            li.append(e)
+    return li
